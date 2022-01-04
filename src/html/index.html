@@ -11,10 +11,66 @@
 {% endblock %}
 
 {% block body %}
-  contents
-  {% include "_templates/_icons/_test.html" %}
-  <input class="" placeholder="test" />
-  <button>aaaa</button>
+<nav class="gnav">
+  <ul class="gnav__menu">
+    <li class="gnav__list">
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/visibility">Menu1</a>
+      <ul class="gnav__second-level">
+        <li>
+          <a href="https://www.google.com/?hl=ja">Child1</a>
+          <ul class="gnav__third-level">
+            <li>
+              <a href="https://www.google.com/?hl=ja">Grandchild1</a>
+              <ul class="gnav__fourth-level">
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="gnav__list">
+      <a href="https://www.google.com/?hl=ja">Menu1</a>
+      <ul class="gnav__second-level">
+        <li>
+          <a href="https://www.google.com/?hl=ja">Child1</a>
+          <ul class="gnav__third-level">
+            <li>
+              <a href="">Grandchild1</a>
+              <ul class="gnav__fourth-level">
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Grandchild1</a>
+              <ul class="gnav__fourth-level">
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+                <li>
+                  <a href="">Greatgrandchild1</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 {% endblock %}
 
 {% block js %}
