@@ -1,16 +1,25 @@
-{% extends "_templates/_frameworks/_index.html" %}
-
-{# meta #}
-{% set metadata = {
-  'description': '',
-  'title': '',
-  'url': ''
-} %}
-
-{% block css %}
-{% endblock %}
-
-{% block body %}
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og:  fb:  website: ">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  <title>Template</title>
+  <meta name="description" content="">
+  <meta property="og:title" content="OMOPJ">
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="OMOPJ">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script> </script> <!-- Chromeのページロード時のtransition動作バグ対策 -->
+</head>
+<body>
+  <div id="wrap">
+<header class="header">
+  header
+</header>
+    <main class="contents">
 <nav class="gnav">
   <ul class="gnav__menu">
     <li class="gnav__list">
@@ -71,7 +80,13 @@
     </li>
   </ul>
 </nav>
-{% endblock %}
+    </main>
 
-{% block js %}
-{% endblock %}
+<footer class="footer">
+  <div class="contents__footer">
+    footer
+  </div>
+  <small class="footer__copy">copy</small>
+</footer>  </div>
+<script src="/assets/js/bandle.js"></script></body>
+</html>
