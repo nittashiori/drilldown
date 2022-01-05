@@ -74,13 +74,19 @@ textarea {
 }
 
 .gnav {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: auto;
 }
 
 ul.gnav__menu {
   width: 100%;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  ul.gnav__menu {
+    flex-direction: column;
+  }
 }
 
 li.gnav__list {
@@ -131,6 +137,7 @@ ul.gnav__second-level {
   position: absolute;
   top: 48px;
   left: 0;
+  transition: all 0.3s ease;
 }
 ul.gnav__second-level li {
   background: #333;
@@ -167,6 +174,7 @@ ul.gnav__third-level {
   position: absolute;
   top: 0;
   left: 100%;
+  transition: all 0.3s ease;
 }
 ul.gnav__third-level li {
   background: #333;
@@ -203,6 +211,7 @@ ul.gnav__fourth-level {
   position: absolute;
   top: 0;
   left: 100%;
+  transition: all 0.3s ease;
 }
 ul.gnav__fourth-level li {
   background: #333;
